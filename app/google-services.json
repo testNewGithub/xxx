@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "622010414284",
+    "firebase_url": "https://el-kol-x-el-kol.firebaseio.com",
+    "project_id": "el-kol-x-el-kol",
+    "storage_bucket": "el-kol-x-el-kol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622010414284:android:6fd5488f9d7fd4da",
+        "android_client_info": {
+          "package_name": "com.gtari.deltatechenologie.elkolxelkol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622010414284-088l4k1oappt39vkmmqkg6i77b1tfiqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gtari.deltatechenologie.elkolxelkol",
+            "certificate_hash": "629d46e9dfc726772dbec9f10f79fb0b79025823"
+          }
+        },
+        {
+          "client_id": "622010414284-fsss11g0da29jm906t8fnhhp3lduqqit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9xuNzxg-mAM2O8gunu2512K4qfmvPZxE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622010414284-fsss11g0da29jm906t8fnhhp3lduqqit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-4168864559615120~6367536105"
+    }
+  ],
+  "configuration_version": "1"
+}

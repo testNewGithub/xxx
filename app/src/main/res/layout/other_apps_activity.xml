@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+  android:background="@drawable/bckgrnd_other_app">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/tetromino_game_royale"
+        android:layout_gravity="center"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/other_app_description"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/other_app_download"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#1e6ef9"
+        android:background="@drawable/bt_ussd"
+        android:onClick="buDownload"/>
+
+</LinearLayout>

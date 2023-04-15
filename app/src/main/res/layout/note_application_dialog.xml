@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_title">
+
+            <TextView
+                android:id="@+id/idTitleNoteDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/note_title"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="31dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/idMessageNoteDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/note_message"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idNoteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/bt_dialog_positive"
+                android:text="@string/yes"
+                android:textColor="@android:color/white"
+                android:onClick="buContinue"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/idCancelNoteDialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bt_dialog_close"
+        android:text="X"
+        android:textColor="#ff3b8a" />
+
+
+</RelativeLayout>

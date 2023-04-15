@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">El-Kol X El-Kol</string>
+
+
+    <string-array name="Operator">
+        <item>Ooredoo</item>
+        <item>Orange</item>
+        <item>Tunisie Télécom</item>
+    </string-array>
+
+
+    <string name="cancel_title">Quitter l\'application</string>
+    <string name="cancel_message">Voulez-vous quitter l\'application ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <string name="cancel_app">Quitter</string>
+    <string name="commentaire">Merci de nous laisser votre avis et commentaire.</string>
+
+
+    <string name="internet_state_title">Réseau internet</string>
+    <string name="internet_state_message">Votre appareil n\'est pas connecté  au réseau internet !</string>
+    <string name="ok">Ok</string>
+
+
+    <string name="note_title">Noter l\'application</string>
+    <string name="note_message">Voulez-vous noter l\'application ?\nVotre avis nous intéresse, aidez-nous à nous améliorer.</string>
+
+
+    <string name="language">Choisissez votre langue</string>
+
+
+    <string name="service_clients">Service Clients</string>
+    <string name="languages">Les Langues</string>
+    <string name="ower_apps">Notre\n Apps</string>
+    <string name="avis">Votre\n Avis</string>
+
+    <string name="other_app_description">Tetromino Game Royale, Jouez GRATUITEMENT, disponible sur Play Store.  </string>
+    <string name="other_app_download">Télécharger</string>
+
+    <string name="close">Fermer</string>
+
+    <string name="privacy_policy">Politique de confidentialité</string>
+
+
+    <string name="title_permission">طلب الصلاحية</string>
+    <string name="message_permission">التطبيق يستخدم هذه الصلاحية حتى يتمكن من تشغيل الرمز (الكود) تلقائيا بكل
+سهولة وعوضًا عنك. رفضك لهذه الصلاحية يعني أنّ التطبيق لن يعمل بشكل جيّد.</string>
+
+    <string name="ad_banner">ca-app-pub-4168864559615120/7494035077</string>
+    <string name="ad_banner_item">ca-app-pub-4168864559615120/5989381714</string>
+    <string name="ad_interstitial">ca-app-pub-4168864559615120/8506614284</string>
+
+</resources>

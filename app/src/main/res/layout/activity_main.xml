@@ -1,214 +1,413 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context="com.gtari.deltatechenologie.rechargerfacilement.MainActivity">
+
+
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#eec6fd">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/background_green">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="5dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2" />
-
-                <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginLeft="7dp"
-                    android:background="@drawable/spinner_background"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:layout_editor_absoluteX="4dp">
-
-                    <Spinner
-                        android:id="@+id/codeOperator"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:visibility="visible" />
-
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="15" />
-
-                <Button
-                    android:layout_width="33dp"
-                    android:layout_height="33dp"
-                    android:layout_weight="0.2"
-                    android:background="@drawable/privacy_pilocy"
-                    android:onClick="buPrivacyPolicy" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.5" />
-
-                <Button
-                    android:id="@+id/idCancelApp"
-                    android:layout_width="55dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="top"
-                    android:layout_marginRight="7dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cancel_app_bt"
-                    android:drawableRight="@drawable/cancel_app_icon"
-                    android:onClick="CancelAppButton"
-                    android:text="@string/cancel_app"
-                    android:textColor="#ffffff"
-                    android:textSize="7sp"
-                    android:textStyle="bold" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2" />
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="2dp" />
-
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                app:adSize="BANNER"
-                app:adUnitId="@string/ad_banner"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp">
-            </com.google.android.gms.ads.AdView>
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            app:adSize="BANNER"
+            app:adUnitId="@string/ad_banner">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
 
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:shadowColor="#ef00ffd9"
+
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:textColor="#00fbff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
 
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/fragment_main_recycler_view"
-            android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/Led"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/redled"
+        android:layout_above="@+id/text_view"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/spinner_background"
+        android:id="@+id/linearLayout2"
+
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp">
+
+        <Spinner
+            android:id="@+id/codeOperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/privacy_pilocy"
+            android:onClick="buPrivacyPolicy" />
+
+        <Space
+            android:layout_width="15dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
+        <Button
+            android:id="@+id/idCancelApp"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cancel_app_bt"
+            android:drawableRight="@drawable/cancel_app_icon"
+            android:onClick="CancelAppButton"
+            android:text="@string/cancel_app"
+            android:textColor="#ffffff"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:layout_marginRight="3dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/bckground_menu">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="55dp"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/idServiceClients"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/service_clients"
-                android:drawableTop="@drawable/service_client_min"
-                android:text="@string/service_clients"
-                android:textColor="#ffffff"
-                android:textSize="8sp"
-                android:textStyle="bold"
-                android:onClick="buServiceClients"/>
-
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/idLanguages"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/languages"
-                android:drawableTop="@drawable/language_ussd"
-                android:text="@string/languages"
-                android:textColor="#ffffff"
-                android:textSize="8sp"
-                android:textStyle="bold"
-                android:onClick="buLanguages"/>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/idNotreApps"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/notre_apps"
-                android:drawableTop="@drawable/play_store_ussd0"
-                android:text="@string/ower_apps"
-                android:textColor="#ffffff"
-                android:textSize="8sp"
-                android:textStyle="bold"
-                android:onClick="buOwerApps"/>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/idVotreAvis"
-                android:layout_gravity="center_vertical"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/votre_avis"
-                android:drawableTop="@drawable/tell_as_uo_ussd"
-                android:text="@string/avis"
-                android:textColor="#ffffff"
-                android:textSize="8sp"
-                android:textStyle="bold"
-                android:onClick="buYourOpenion"/>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+       android:layout_marginTop="7dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignRight="@+id/linearLayout5">
+
+        <ImageButton
+            android:id="@+id/idRestart"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rotate_icon"
+            android:onClick="buRestartCode"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/idTorche"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bt_torche_off"
+                android:onClick="buOnTorche"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageTorch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/torche_off" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linearLayout4"
+        android:layout_marginRight="3dp">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/idFrameForfaitInternet"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp">
+
+
+         <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button_ihm"
+             android:onClick="buForfaitInternet"
+            android:text="solde"
+             android:contentDescription="solde" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/forfait_internet"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+
+        <ImageView
+            android:id="@+id/shine"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-70dp"
+            android:src="@drawable/shine_effect"
+            android:scaleType="fitCenter"
+            android:alpha="0.7"/>
+
+    </FrameLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/idButtonSolde"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/idButtonSolde"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_ihm2"
+            android:onClick="buSolde"
+            android:text="@string/solde"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/option_show_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
+        android:alpha="0.6"/>
+
+    <ImageView
+        android:id="@+id/idUnderOptionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sous_option_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha="0.8"/>
+<FrameLayout
+    android:id="@+id/idHelp"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_alignBottom="@+id/imageView"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="62dp"
+    android:layout_marginBottom="10dp">
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/help_bt"
+        android:onClick="buHelp" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/help"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/idNote"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="104dp"
+        android:layout_marginBottom="10dp">
+
+    <ImageButton
+
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/note_bt"
+        android:onClick="buNote"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/note"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        app:fab_colorNormal="#e0818181"
+        app:fab_colorPressed="#ef8c8c8c"
+        app:fab_colorRipple="#f5646464"
+        app:fab_shadowColor="#66000000"
+        app:fab_showShadow="true"
+
+        app:menu_fab_size="mini"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorPressed="#444444"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_position="right"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="true"
+        app:menu_openDirection="up"
+        tools:ignore="RtlHardcoded"
+        app:menu_icon="@drawable/settings"
+        app:menu_colorNormal="#0028ff85"
+        app:menu_colorPressed="#0028ff85"
+        app:menu_colorRipple="#837b7b7b"
+        app:menu_shadowColor="#00000000">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fab_colorNormal="#dede00"
+            app:fab_label="@string/option_menu_language"
+            app:fab_showAnimation="@anim/shake_a"
+            app:fab_hideAnimation="@anim/shake_hide"
+            android:onClick="buOptionMenuA"
+            android:src="@drawable/language_icon"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fab_colorNormal="#00970d"
+            app:fab_label="@string/option_menu_app"
+            app:fab_showAnimation="@anim/shake_b"
+            app:fab_hideAnimation="@anim/shake_hide"
+            android:onClick="buOptionMenuB"
+            android:src="@drawable/ower_app"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fab_colorNormal="#c61301"
+            app:fab_colorPressed="#970a00"
+            app:fab_label="@string/option_menu_avis"
+            app:fab_showAnimation="@anim/shake_c"
+            app:fab_hideAnimation="@anim/shake_hide"
+            android:onClick="buOptionMenuC"
+            android:src="@drawable/tell_as_uo"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fab_colorNormal="#006695"
+            app:fab_label="@string/option_menu_help"
+            app:fab_showAnimation="@anim/shake_d"
+            app:fab_hideAnimation="@anim/shake_hide"
+            android:onClick="buOptionMenuD"
+            android:src="@drawable/help_img"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <TextView
+        android:id="@+id/idGrattez"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ff7b00"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/linearLayout4"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_marginTop="37dp" />
 
 
 

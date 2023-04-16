@@ -1,70 +1,66 @@
 <resources>
-    <string name="app_name">El-Kol X El-Kol </string>
-
-
-    <string name="title_permission">طلب الصلاحية</string>
-    <string name="message_permission">التطبيق يستخدم هذه الصلاحية حتى يتمكن من تشغيل الرمز (الكود) تلقائيا بكل
-سهولة وعوضًا عنك. رفضك لهذه الصلاحية يعني أنّ التطبيق لن يعمل بشكل جيّد.</string>
-
-
-    <string name="cancel_title">Quitter l\'application</string>
-    <string name="cancel_message">Voulez-vous quitter l\'application ?</string>
-    <string name="yes">Oui</string>
-    <string name="no">Non</string>
-
-
+    <string name="app_name">Recharger Facilement</string>
     <string-array name="Operator">
         <item>Ooredoo</item>
         <item>Orange</item>
         <item>Tunisie Télécom</item>
     </string-array>
 
-    <string name="cancel_app">Quitter</string>
-    <string name="commentaire">Merci de nous laisser votre avis et commentaire.</string>
 
+    <string name="language">Choisissez votre langue</string>
+
+    <string name="cancel_title">Quitter l\'application</string>
+    <string name="cancel_message">Voulez-vous quitter l\'application ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
 
     <string name="internet_state_title">Réseau internet</string>
     <string name="internet_state_message">Votre appareil n\'est pas connecté  au réseau internet !</string>
     <string name="ok">Ok</string>
 
-
     <string name="note_title">Noter l\'application</string>
     <string name="note_message">Voulez-vous noter l\'application ?\nVotre avis nous intéresse, aidez-nous à nous améliorer.</string>
 
-    <string name="language">Choisissez votre langue</string>
+
+    <string name="camera_permission_title">طلب الصلاحية</string>
+    <string name="camera_permission">التطبيق يستخدم هذه الصلاحيّة حتّى يتمكن من قراءة رقم بطاقة الشحن بكل سهولة بإستخدام كاميرا الهاتف.
+رفضك لهذه الصلاحية يعني أنك لن تستطيع إستخدام التطبيق.</string>
+    <string name="call_permission_title">طلب الصلاحية</string>
+    <string name="call_permission">التطبيق يستخدم هذه الصلاحية حتى يتمكن من شحن رصيدك تلقائيا بكل
+سهولة وعوضًا عنك. رفضك لهذه الصلاحية يعني أنّ التطبيق لن يعمل بشكل جيّد.</string>
 
 
-    <string name="service_clients">Service Clients</string>
-    <string name="languages">Les Langues</string>
-    <string name="ower_apps">Notre\n Apps</string>
-    <string name="avis">Votre\n Avis</string>
+    <string name="gratter">N\'obliez pas de bien gratter votre carte de recharche</string>
+    <string name="forfait_internet">  Forfait \n Internet</string>
+    <string name="solde">Solde</string>
 
-    <string name="ad_banner">ca-app-pub-4168864559615120/7494035077</string>
-    <string name="ad_banner_item">ca-app-pub-4168864559615120/5989381714</string>
-    <string name="ad_interstitial">ca-app-pub-4168864559615120/8506614284</string>
+    <string name="option_menu_language">Les langues</string>
+    <string name="option_menu_app">Notre Apps</string>
+    <string name="option_menu_avis">Votre avis</string>
+    <string name="option_menu_help">Aide</string>
 
-    <string name="close">Close</string>
+
+    <string name="help_description">Comment utiliser l\'application ?</string>
+
+    <string name="cancel_app">Quitter</string>
+
+    <string name="dependencies">Merci d\'attendre jusqu\'à le téléchargement des dépendances.</string>
+
+    <string name="torch_alert">Cet appareil ne prend pas en charge le mode FLASH.</string>
+
+    <string name="commentaire">Merci de nous laisser votre avis et commentaire.</string>
+
+    <string name="ad_banner">ca-app-pub-4168864559615120/1685190066</string>
+    <string name="ad_interstitial">ca-app-pub-4168864559615120/7867455038</string>
+
+
+    <string name="other_app_description">كثرو عليك الرموز و الأكواد متع خط الإتصال متاعك خلّي عاد كي يبداو عندك زوز خطوط إتصال!!
+
+ساهل برشا تطبيق الكل في الكل تلقا فيه جميع الرموز لجميع شبكات الإتصال.</string>
+    <string name="other_app_download">Télécharger</string>
 
     <string name="privacy_policy">Privacy Policy</string>
-
-    <color name="blue_1">#00B8D4</color>
-    <color name="blue_2">#00E5FF</color>
-    <color name="green_1">#66ef01</color>
-
-
-    <color name="red_1">#C2185B</color>
-    <color name="red_2">#E91E63</color>
-    <color name="red_3">#F44336</color>
-    <color name="red_4">#FF5722</color>
-    <integer-array name="button_colors">
-        <item>@color/red_1</item>
-        <item>@color/red_2</item>
-        <item>@color/red_3</item>
-        <item>@color/red_4</item>
-    </integer-array>
-
-    <string name="other_app_description">Tetromino Game Royale:\n Get it now for FREE on Play Store</string>
-    <string name="other_app_download">Download</string>
+    <string name="close">Close</string>
 
 
 </resources>

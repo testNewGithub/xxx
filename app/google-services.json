@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "622010414284",
-    "firebase_url": "https://el-kol-x-el-kol.firebaseio.com",
-    "project_id": "el-kol-x-el-kol",
-    "storage_bucket": "el-kol-x-el-kol.appspot.com"
+    "project_number": "779536067181",
+    "firebase_url": "https://recharger-facilement-chargi.firebaseio.com",
+    "project_id": "recharger-facilement-chargi",
+    "storage_bucket": "recharger-facilement-chargi.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:622010414284:android:6fd5488f9d7fd4da",
+        "mobilesdk_app_id": "1:779536067181:android:128f0cdc95cbf740",
         "android_client_info": {
-          "package_name": "com.gtari.deltatechenologie.elkolxelkol"
+          "package_name": "com.gtari.deltatechenologie.rechargerfacilement"
         }
       },
       "oauth_client": [
         {
-          "client_id": "622010414284-088l4k1oappt39vkmmqkg6i77b1tfiqr.apps.googleusercontent.com",
+          "client_id": "779536067181-falcetj85j7dsedfpk2g7hrvanilmi04.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.gtari.deltatechenologie.elkolxelkol",
+            "package_name": "com.gtari.deltatechenologie.rechargerfacilement",
             "certificate_hash": "629d46e9dfc726772dbec9f10f79fb0b79025823"
           }
         },
         {
-          "client_id": "622010414284-fsss11g0da29jm906t8fnhhp3lduqqit.apps.googleusercontent.com",
+          "client_id": "779536067181-a8461pbji82si09uqmj25mrqi6pb5d03.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD9xuNzxg-mAM2O8gunu2512K4qfmvPZxE"
+          "current_key": "AIzaSyC5wBUFUpLRW-NsGSaSGygDpu4zX4b0Nys"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "622010414284-fsss11g0da29jm906t8fnhhp3lduqqit.apps.googleusercontent.com",
+              "client_id": "779536067181-a8461pbji82si09uqmj25mrqi6pb5d03.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -49,7 +49,7 @@
           "status": 2
         }
       },
-      "admob_app_id": "ca-app-pub-4168864559615120~6367536105"
+      "admob_app_id": "ca-app-pub-4168864559615120~6007578450"
     }
   ],
   "configuration_version": "1"

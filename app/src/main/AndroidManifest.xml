@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gtari.deltatechenologie.elkolxelkol">
+    package="com.gtari.deltatechenologie.rechargerfacilement">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/icone_elkolxelko"
+        android:allowBackup="false"
+        android:icon="@mipmap/recharger_facilemnt_icon_min"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/icone_elkolxelko"
+        android:roundIcon="@mipmap/recharger_facilemnt_icon_min"
         android:supportsRtl="false"
+        android:screenOrientation="portrait"
         android:theme="@style/MyTheme">
 
         <activity android:name=".MainActivity"
             android:theme="@style/MyTheme.Launcher">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
-        <activity android:name=".OtherApplications"
-            android:theme="@style/MyTheme.Launcher">
+        <activity android:name=".GetPemission"
+                  android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".CustomItemActivity">
+        <activity android:name=".HelpActivity"
+                  android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name=".OtherApplication"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".CustomItemActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr"/>
     </application>
 
 </manifest>

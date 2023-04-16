@@ -3,8 +3,13 @@
     <item android:state_pressed="true">
 
 <shape  xmlns:android="http://schemas.android.com/apk/res/android"    android:shape="rectangle">
+<<<<<<< HEAD
     <stroke        android:width="2dp"        android:color="#de414141"        />
     <gradient android:startColor="#debcbcbc" android:endColor="#de2d2d2d" android:angle="90"/>
+=======
+    <stroke        android:width="2dp"        android:color="#414141"        />
+    <gradient android:startColor="#bcbcbc" android:endColor="#2d2d2d" android:angle="90"/>
+>>>>>>> Initial commit
 
     <corners
         android:bottomLeftRadius="3dp"
@@ -16,8 +21,13 @@
 
     <item>
         <shape  xmlns:android="http://schemas.android.com/apk/res/android"    android:shape="rectangle">
+<<<<<<< HEAD
             <stroke        android:width="2dp"        android:color="#de414141"        />
             <gradient android:startColor="#de2d2d2d" android:endColor="#debcbcbc" android:angle="90"/>
+=======
+            <stroke        android:width="2dp"        android:color="#414141"        />
+            <gradient android:startColor="#2d2d2d" android:endColor="#bcbcbc" android:angle="90"/>
+>>>>>>> Initial commit
 
             <corners
                 android:bottomLeftRadius="3dp"

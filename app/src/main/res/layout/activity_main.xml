@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     xmlns:tools="http://schemas.android.com/tools"
@@ -408,6 +409,217 @@
         android:layout_alignLeft="@+id/linearLayout2"
         android:layout_alignStart="@+id/linearLayout2"
         android:layout_marginTop="37dp" />
+=======
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#eec6fd">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_green">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/spinner_background"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:layout_editor_absoluteX="4dp">
+
+                    <Spinner
+                        android:id="@+id/codeOperator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" />
+
+                <Button
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/privacy_pilocy"
+                    android:onClick="buPrivacyPolicy" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+                <Button
+                    android:id="@+id/idCancelApp"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cancel_app_bt"
+                    android:drawableRight="@drawable/cancel_app_icon"
+                    android:onClick="CancelAppButton"
+                    android:text="@string/cancel_app"
+                    android:textColor="#ffffff"
+                    android:textSize="7sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                app:adUnitId="@string/ad_banner"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_main_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bckground_menu">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idServiceClients"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/service_clients"
+                android:drawableTop="@drawable/service_client_min"
+                android:text="@string/service_clients"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:onClick="buServiceClients"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idLanguages"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/languages"
+                android:drawableTop="@drawable/language_ussd"
+                android:text="@string/languages"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:onClick="buLanguages"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idNotreApps"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/notre_apps"
+                android:drawableTop="@drawable/play_store_ussd0"
+                android:text="@string/ower_apps"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:onClick="buOwerApps"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/idVotreAvis"
+                android:layout_gravity="center_vertical"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/votre_avis"
+                android:drawableTop="@drawable/tell_as_uo_ussd"
+                android:text="@string/avis"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:onClick="buYourOpenion"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+>>>>>>> Initial commit
 
 
 

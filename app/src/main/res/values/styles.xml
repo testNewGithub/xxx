@@ -1,5 +1,6 @@
 <resources>
 
+<<<<<<< HEAD
     <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#009670</item>
         <item name="colorPrimaryDark">#009670</item>
@@ -8,6 +9,15 @@
 
 
 
+=======
+    <!-- Base application theme. -->
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#51bf00</item>
+        <item name="colorPrimaryDark">#8107ab</item>
+        <item name="colorAccent">#8107ab</item>
+    </style>
+
+>>>>>>> Initial commit
     <style name="MyTheme.Launcher">
         <item name="android:windowBackground">@drawable/app_launcher</item>
         <item name="android:windowNoTitle">true</item>

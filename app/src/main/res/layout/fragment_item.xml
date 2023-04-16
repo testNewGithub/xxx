@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/blue_1">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/fragment_main_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"/>
+
+    <Space
+        android:layout_width="20dip"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/idButtonUSSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/bt_ussd"/>
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>

@@ -58,7 +58,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:layout_weight="1"
+<<<<<<< HEAD
                 android:background="@drawable/language_button"
+=======
+                android:background="@drawable/languages_button"
+>>>>>>> Initial commit
                 android:onClick="buLanguageFrensh"
                 android:text="Français"
                 android:textColor="#ffffff"
@@ -91,7 +95,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:layout_weight="1"
+<<<<<<< HEAD
                     android:background="@drawable/language_button"
+=======
+                    android:background="@drawable/languages_button"
+>>>>>>> Initial commit
                     android:onClick="buLanguageArabic"
                     android:text="العربية"
                     android:textColor="#ffffff"

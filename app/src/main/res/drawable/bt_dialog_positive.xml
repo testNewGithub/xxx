@@ -4,5 +4,9 @@
     <solid android:color="@android:color/holo_green_light" />
     <stroke        android:width="2dp"        android:color="#9acd32"        />
     <gradient android:startColor="#b1da5f" android:endColor="#7bb701" android:angle="90"/>
+<<<<<<< HEAD
 </shape>
  
+=======
+</shape>
+>>>>>>> Initial commit

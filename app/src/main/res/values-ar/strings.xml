@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <string name="app_name">شرجي بسهولة</string>
+=======
+    <string name="app_name">الكل في الكل</string>
+
+>>>>>>> Initial commit
     <string-array name="Operator">
         <item>. أوريدو</item>
         <item>. أورنج</item>
@@ -8,17 +13,28 @@
     </string-array>
 
 
+<<<<<<< HEAD
     <string name="language">إختيار اللغة</string>
 
+=======
+>>>>>>> Initial commit
     <string name="cancel_title">خروج من التطبيق</string>
     <string name="cancel_message">هل تريد الخروج من التطبيق ؟</string>
     <string name="yes">نعم</string>
     <string name="no">لا</string>
 
+<<<<<<< HEAD
+=======
+
+    <string name="cancel_app">خروج</string>
+    <string name="commentaire">الرجاء ترك تقييمك و رأيك في تعليق.</string>
+
+>>>>>>> Initial commit
     <string name="internet_state_title">شبكة الانترنت</string>
     <string name="internet_state_message">الجهاز غير متصل بشبكة الانترنت !</string>
     <string name="ok">إعادة المحاولة</string>
 
+<<<<<<< HEAD
     <string name="note_title">تقيم التطبيق</string>
     <string name="note_message">هل تريد تقيم التطبيق ؟\nرأيك يهمنا, ساعدنا على التحسين.</string>
 
@@ -64,6 +80,38 @@
 
     <string name="ad_banner">ca-app-pub-4168864559615120/1685190066</string>
     <string name="ad_interstitial">ca-app-pub-4168864559615120/7867455038</string>
+=======
+
+    <string name="note_title">تقيم التطبيق</string>
+    <string name="note_message">هل تريد تقيم التطبيق ؟\nرأيك يهمنا, ساعدنا على التحسين.</string>
+
+    <string name="language">إختيار اللغة</string>
+
+
+    <string name="service_clients">مصلحة الحرفـاء</string>
+    <string name="languages">الـلــــــغــة</string>
+    <string name="ower_apps">تـطـبـيـقـاتــنا</string>
+    <string name="avis">رأيـك يـهـمـنا</string>
+
+    <string name="other_app_description">Tetromino Game Royale:\n التحميل مجاني الآن من بلاي ستور</string>
+    <string name="other_app_download">تحميل</string>
+
+    <string name="close">إغلاق</string>
+
+    <string name="privacy_policy">سياسة الخصوصية</string>
+
+
+
+    <string name="title_permission">طلب الصلاحية</string>
+    <string name="message_permission">التطبيق يستخدم هذه الصلاحية حتى يتمكن من تشغيل الرمز (الكود) تلقائيا بكل
+سهولة وعوضًا عنك. رفضك لهذه الصلاحية يعني أنّ التطبيق لن يعمل بشكل جيّد.</string>
+
+    <string name="ad_banner">ca-app-pub-4168864559615120/7494035077</string>
+    <string name="ad_banner_item">ca-app-pub-4168864559615120/5989381714</string>
+    <string name="ad_interstitial">ca-app-pub-4168864559615120/8506614284</string>
+
+
+>>>>>>> Initial commit
 
 
 </resources>

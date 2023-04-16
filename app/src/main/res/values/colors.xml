@@ -2,6 +2,11 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+<<<<<<< HEAD
     <color name="colorAccent">#ff4081</color>
     <color name="colorLauncher">#000000</color>
+=======
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLauncher">#15001d</color>
+>>>>>>> Initial commit
 </resources>

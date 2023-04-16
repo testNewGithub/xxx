@@ -15,7 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+<<<<<<< HEAD
         android:textSize="15sp"
+=======
+        android:textSize="13sp"
+>>>>>>> Initial commit
         android:textColor="#000"
         android:textStyle="italic"/>
 
@@ -23,4 +27,8 @@
         android:layout_width="10dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
+<<<<<<< HEAD
 </LinearLayout>
+=======
+</LinearLayout>
+>>>>>>> Initial commit

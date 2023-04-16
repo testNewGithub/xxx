@@ -29,12 +29,18 @@
                 android:padding="10dp"
                 android:text="@string/cancel_title"
                 android:textColor="@android:color/white"
+<<<<<<< HEAD
                 android:textSize="18sp" />
 
             <Space
                 android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
+=======
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+>>>>>>> Initial commit
         </LinearLayout>
 
         <TextView
@@ -94,6 +100,7 @@
 
 
 
+<<<<<<< HEAD
 <Button
 
     android:id="@+id/close_button"
@@ -113,5 +120,26 @@
     android:textColor="#ff3b8a"
 
     />
+=======
+    <Button
+
+        android:id="@+id/close_button"
+
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentTop="true"
+
+        android:background="@drawable/bt_dialog_close"
+
+        android:text="X"
+
+        android:textColor="#ff3b8a"
+
+        />
+>>>>>>> Initial commit
 
 </RelativeLayout>

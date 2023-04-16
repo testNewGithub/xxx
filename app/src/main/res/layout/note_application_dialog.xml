@@ -32,11 +32,16 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="8dp"
+<<<<<<< HEAD
                 tools:layout_editor_absoluteY="31dp" />
             <Space
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
+=======
+                tools:layout_editor_absoluteY="31dp"
+                android:gravity="center"/>
+>>>>>>> Initial commit
         </LinearLayout>
 
 
